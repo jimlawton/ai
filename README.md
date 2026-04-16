@@ -1,8 +1,42 @@
-# Agent prompts and rules
+# Agent prompts, rules, and skills
 
-A collection of useful Agent prompts and rules files.
+A collection of useful Agent prompts, rules files, and Claude Code skills/plugins.
 
-References:
+## Skills & Plugins
+
+### git-spice
+
+A Claude Code plugin for managing stacked Git branches with [git-spice](https://github.com/abhinav/git-spice). Provides CLI reference, workflow patterns, safety rules, worktree coordination for multi-agent setups, and squash-merge reconciliation.
+
+**Location:** `skills/git-spice/`
+
+**What's included:**
+- Complete command reference with all flags and shorthands
+- 13 workflow patterns (creating stacks, mid-stack edits, sync after merges, etc.)
+- Safety rules (never `git push` or `git rebase` on tracked branches)
+- Worktree coordination for parallel multi-agent development
+- Tracking external branches safely
+- PR status and stack views with `gh` CLI
+
+**Installing as a plugin:**
+
+```bash
+# From a local path
+claude plugin install /path/to/this-repo/skills/git-spice
+
+# Then invoke with
+/git-spice:git-spice
+```
+
+**Using as a standalone skill:**
+
+Copy `skills/git-spice/skills/git-spice/` into your project's `.claude/skills/` directory:
+
+```bash
+cp -r skills/git-spice/skills/git-spice /path/to/your-project/.claude/skills/
+```
+
+## References
 
 - https://www.reddit.com/r/ArtificialInteligence/comments/1kw16yi/a_comprehensive_list_of_agentrule_files_do_we/ - discussion of the various AI systems and their use of rules files.
 - https://github.com/jlevy/simple-modern-uv - General and Python rules.
