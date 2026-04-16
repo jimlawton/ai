@@ -1,13 +1,18 @@
 {
   "name": "jimlawton-plugins",
+  "owner": {
+    "name": "Jim Lawton"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for git workflows and developer tools"
+  },
   "plugins": [
     {
       "name": "git-spice",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/jimlawton/ai.git",
-        "path": "skills/git-spice"
-      }
+      "source": "./skills/git-spice",
+      "description": "Manage stacked Git branches and PRs with git-spice",
+      "version": "1.0.0",
+      "license": "MIT"
     }
   ]
 }
