@@ -1,0 +1,13 @@
+{
+  "name": "jimlawton-plugins",
+  "plugins": [
+    {
+      "name": "git-spice",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/jimlawton/ai.git",
+        "path": "skills/git-spice"
+      }
+    }
+  ]
+}

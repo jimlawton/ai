@@ -18,14 +18,23 @@ A Claude Code plugin for managing stacked Git branches with [git-spice](https://
 - Tracking external branches safely
 - PR status and stack views with `gh` CLI
 
-**Installing as a plugin:**
+**Installing as a plugin via marketplace:**
 
 ```bash
-# From a local path
-claude plugin install /path/to/this-repo/skills/git-spice
+# Add this repo as a marketplace (one-time)
+/plugin marketplace add jimlawton/ai
+
+# Install the plugin
+/plugin install git-spice@jimlawton-ai
 
 # Then invoke with
 /git-spice:git-spice
+```
+
+**Installing from a local path:**
+
+```bash
+/plugin install /path/to/this-repo/skills/git-spice
 ```
 
 **Using as a standalone skill:**
