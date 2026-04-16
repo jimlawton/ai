@@ -1,0 +1,17 @@
+{
+  "name": "git-spice",
+  "version": "1.0.0",
+  "description": "Manage stacked Git branches and PRs with git-spice. Provides CLI reference, workflow patterns, safety rules, worktree coordination, and squash-merge reconciliation.",
+  "author": {
+    "name": "Jim Lawton"
+  },
+  "repository": "https://github.com/jimlawton/ai",
+  "license": "MIT",
+  "keywords": [
+    "git-spice",
+    "stacked-branches",
+    "stacked-prs",
+    "git",
+    "pull-requests"
+  ]
+}
